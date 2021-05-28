@@ -69,15 +69,14 @@ data.forEach((element, index) => {
 ```js
 var patternGrab = window.patternGrab
 
-// Data
-var regex = /<[^>]*>/gm
-var string = `<span>Yup This is a <b>Test</b> Yea <img src="/blabla.png" /> Its Ok?</span>`
-
 // Pattern Grab
-var grab = patternGrab({ regex, string })
+var grab = patternGrab({
+  regex: /<[^>]*>/gm,
+  string:  `<span>Yup This is a <b>Test</b> Yea <img src="/blabla.png" /> Its Ok?</span>`
+})
 
 // The HTML tag strings are grabbed.
-grab.data === [
+grab.data == [
   "<span>",
   "Yup This is a ",
   "<b>",
@@ -90,12 +89,12 @@ grab.data === [
 ];
 
 // Actually matched elements position are grabbed.
-grab.positions === [0, 2, 4, 6, 8]
+grab.positions == [0, 2, 4, 6, 8]
 
 // It is easy to handle because it is placed with other strings.
 for(index in grab.data){
   var element = grab.data[index]
-  if(positions.indexOf(element) !== -1){
+  if(grab.positions.indexOf(element) != -1){
     // HTML Tag
   } else {
     // Plain text
