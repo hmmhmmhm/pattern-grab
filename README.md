@@ -5,9 +5,11 @@
 ![Github Workflow](https://github.com/hmmhmmhm/pattern-grab/actions/workflows/test.yml/badge.svg)
 ![GitHub License](https://img.shields.io/github/license/hmmhmmhm/pattern-grab)
 ![Jest Coverage](https://raw.githubusercontent.com/hmmhmmhm/pattern-grab/main/badges/badge-lines.svg)
+![Gzip Size](https://img.badgesize.io//hmmhmmhm/pattern-grab/main/export/pattern-grab.js.svg?compression=gzip)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 ![NPM Version](https://img.shields.io/npm/v/pattern-grab.svg?label=version)
 ![jsDelivr](https://badgen.net/jsdelivr/v/npm/pattern-grab)
+[![AMA](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://twitter.com/hmartapp)
 
 Pattern-grab simplifies the process of parsing string patterns using regular expressions.
 
@@ -58,7 +60,7 @@ data.forEach((element, index) => {
 
 <br />
 
-## 📄 License
+## 💡 License
 
 MIT Licensed.
 
