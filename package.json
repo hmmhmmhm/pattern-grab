@@ -6,7 +6,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest --env=node --colors",
-    "build": "tsc"
+    "build": "tsc",
+    "export": "tsc && webpack"
   },
   "keywords": [
     "typescript",
@@ -30,7 +31,11 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
     "jest": "27.0.1",
+    "terser-webpack-plugin": "^4.0.0",
     "ts-jest": "27.0.1",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.2",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^3.3.12"
   }
 }
