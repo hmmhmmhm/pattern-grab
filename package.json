@@ -1,0 +1,25 @@
+{
+  "name": "pattern-grab",
+  "version": "0.9.9",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest --env=node --colors",
+    "build": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "pattern",
+    "regex"
+  ],
+  "author": "hmmhmmhm",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.1",
+    "jest": "27.0.1",
+    "ts-jest": "27.0.1",
+    "typescript": "^4.3.2"
+  }
+}
