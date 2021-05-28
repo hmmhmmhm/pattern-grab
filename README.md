@@ -50,7 +50,7 @@ positions === [0, 2, 4, 6, 8]
 
 // It is easy to handle because it is placed with other strings.
 data.forEach((element, index) => {
-  if(positions.includes(element)){
+  if(positions.includes(index)){
     // HTML Tag
   } else {
     // Plain text
@@ -94,7 +94,7 @@ grab.positions == [0, 2, 4, 6, 8]
 // It is easy to handle because it is placed with other strings.
 for(index in grab.data){
   var element = grab.data[index]
-  if(grab.positions.indexOf(element) != -1){
+  if(grab.positions.indexOf(index) != -1){
     // HTML Tag
   } else {
     // Plain text
