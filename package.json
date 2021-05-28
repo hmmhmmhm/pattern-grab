@@ -1,7 +1,7 @@
 {
   "name": "pattern-grab",
   "version": "0.9.9",
-  "description": "",
+  "description": "🤛🏻 Regular Expression Data Grabber",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -11,7 +11,18 @@
   "keywords": [
     "typescript",
     "pattern",
-    "regex"
+    "pattern-matching",
+    "regex",
+    "regexp",
+    "regexp-match",
+    "regular-expression",
+    "string",
+    "crawling",
+    "parse",
+    "parser",
+    "scraping",
+    "grab",
+    "grabber"
   ],
   "author": "hmmhmmhm",
   "license": "MIT",

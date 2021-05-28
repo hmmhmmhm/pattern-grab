@@ -1,3 +1,7 @@
+/**
+ * Returns position values with strings
+ * matching the regular expression.
+ */
 export const getPositions = (regex: RegExp, string: string) => {
   let m: RegExpExecArray | null = null
   const positions: [number, number][] = []
@@ -7,6 +11,14 @@ export const getPositions = (regex: RegExp, string: string) => {
   return positions
 }
 
+/**
+ * It returns array that includes string of match
+ * the regular expression with not matched string.
+ *
+ * @returns
+ * - data - Well-bundled array of strings.
+ * - position - It is index array of elements matching regular expressions during string arrays.
+ */
 export const patternGrab = ({
   regex,
   string
