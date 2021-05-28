@@ -1,6 +1,6 @@
 {
   "name": "pattern-grab",
-  "version": "0.9.10",
+  "version": "1.0.0",
   "description": "🤛🏻 Regular Expression Data Grabber",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

@@ -60,6 +60,51 @@ data.forEach((element, index) => {
 
 <br />
 
+## 📦 Usage (CDN)
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/pattern-grab/export/pattern-grab.js"></script>
+```
+
+```js
+var patternGrab = window.patternGrab
+
+// Data
+var regex = /<[^>]*>/gm
+var string = `<span>Yup This is a <b>Test</b> Yea <img src="/blabla.png" /> Its Ok?</span>`
+
+// Pattern Grab
+var grab = patternGrab({ regex, string })
+
+// The HTML tag strings are grabbed.
+grab.data === [
+  "<span>",
+  "Yup This is a ",
+  "<b>",
+  "Test",
+  "</b>",
+  " Yea ",
+  '<img src="/blabla.png" />',
+  " Its Ok?",
+  "</span>",
+];
+
+// Actually matched elements position are grabbed.
+grab.positions === [0, 2, 4, 6, 8]
+
+// It is easy to handle because it is placed with other strings.
+for(index in grab.data){
+  var element = grab.data[index]
+  if(positions.indexOf(element) !== -1){
+    // HTML Tag
+  } else {
+    // Plain text
+  }
+}
+```
+
+<br />
+
 ## 💡 License
 
 MIT Licensed.
